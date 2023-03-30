@@ -7,6 +7,8 @@
 ### webSocket 열기 HandShake
 클라이언트가 먼저 핸드셰이크 요청을 보내고 이에 응답을 서버가 클라이언트로 보내는 구조
 
+<br> 
+
 # stomp (Simple Text Oriented Messaging Protocol)
 * webSocket 위에서 동작하는 양방향 네트워크 프로토콜
 * HTTP에서 모델링 되는 Frame 기반 프로토콜
@@ -46,7 +48,14 @@ destination: /subscribe/chat/room/5
 {"chatRoomId": 5, "type": "MESSAGE", "writer": "clientB"}
 ```
 
-[출처]
+<br> 
+
+**[출처]**
 1. https://dev-gorany.tistory.com/212
 2. https://dev-gorany.tistory.com/235
 3. https://supawer0728.github.io/2018/03/30/spring-websocket/
+
+
+**[실습출처]**
+1. https://velog.io/@jyyoun1022/Spring-Web-Socket%EC%9B%B9-%EC%86%8C%EC%BC%93%EA%B3%BC-Chatting%EC%B1%84%ED%8C%85-2
+2. 
