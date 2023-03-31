@@ -1,4 +1,4 @@
-package stomp.webSocket;
+package stomp.chat.webSocket;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -8,8 +8,8 @@ import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
-import stomp.webSocket.dto.ChatMessage;
-import stomp.webSocket.dto.ChatRoom;
+import stomp.chat.webSocket.dto.ChatMessage;
+import stomp.chat.webSocket.dto.ChatRoom;
 
 @RequiredArgsConstructor
 @Component

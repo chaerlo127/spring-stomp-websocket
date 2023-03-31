@@ -1,9 +1,9 @@
-package stomp.webSocket.dto;
+package stomp.chat.webSocket.dto;
 
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.web.socket.WebSocketSession;
-import stomp.webSocket.ChatService;
+import stomp.chat.webSocket.ChatService;
 
 import java.util.HashSet;
 import java.util.Set;

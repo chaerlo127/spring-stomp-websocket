@@ -1,9 +1,9 @@
-package stomp.webSocket;
+package stomp.chat.webSocket;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import stomp.webSocket.dto.ChatRoom;
+import stomp.chat.webSocket.dto.ChatRoom;
 
 import java.util.List;
 

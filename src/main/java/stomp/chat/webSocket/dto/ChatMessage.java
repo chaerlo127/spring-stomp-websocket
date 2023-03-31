@@ -1,4 +1,4 @@
-package stomp.webSocket.dto;
+package stomp.chat.webSocket.dto;
 
 import lombok.Builder;
 import lombok.Getter;
