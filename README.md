@@ -5,11 +5,18 @@
 * 실시간을 보장하고, 변경 사항의 빈도가 잦을 때 주로 사용
 
 ### webSocket 열기 HandShake
-클라이언트가 먼저 핸드셰이크 요청을 보내고 이에 응답을 서버가 클라이언트로 보내는 구조
+* 클라이언트가 먼저 핸드셰이크 요청을 보내고 이에 응답을 서버가 클라이언트로 보내는 구조
+* HTTP 프로토콜을 통해 연결이 이루어지며, 연결이 정상적으로 이루어지면, HTTP 연결은 자동으로 끊김
 
 ### `ws` vs `wss`
 * HTTP, HTTPS 통신을 위해 오픈한 포트를 사용하는데, websocket은 별도의 포트를 사용할 필요가 없음
 * 보안을 위해 사용하는 HTTPS처럼 웹 소켓 통신도 wss로 통신을 지원함.
+
+
+### 단점
+* 웹 소켓 서버가 1대인 경우에만 정상적으로 동작을 함.
+* 항상 연결을 하고 있어야 함. 
+* 웹 소켓 서버가 다수인 경우에는 STOMP를 사용
 
 <br> 
 
@@ -66,4 +73,4 @@ destination: /subscribe/chat/room/5
 
 **[실습출처]**
 1. https://velog.io/@jyyoun1022/Spring-Web-Socket%EC%9B%B9-%EC%86%8C%EC%BC%93%EA%B3%BC-Chatting%EC%B1%84%ED%8C%85-2
-2. 
+2. https://brunch.co.kr/@springboot/695

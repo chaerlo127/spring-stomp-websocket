@@ -12,6 +12,10 @@ import org.springframework.web.socket.config.annotation.*;
 public class WebSocketConfig implements WebSocketConfigurer {
 
     private final ChatHandler chatHandler;
+
+    /**
+     * setAllowedOrigins("*"): 클라이언트 모든 요청 수용 가능
+     */
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(chatHandler, "ws/chat").setAllowedOrigins("*"); // endpoint : /ws/chat

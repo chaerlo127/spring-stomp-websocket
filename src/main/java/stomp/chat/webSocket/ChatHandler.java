@@ -11,6 +11,9 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 import stomp.chat.webSocket.dto.ChatMessage;
 import stomp.chat.webSocket.dto.ChatRoom;
 
+/**
+ * stomp에서는 따로 ChatHandler를 생성할 필요 없음
+ */
 @RequiredArgsConstructor
 @Component
 @Slf4j
@@ -53,5 +56,11 @@ public class ChatHandler extends TextWebSocketHandler {
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
         log.info(session + " 클라이언트 접속 해제");
+    }
+
+    /** client가 접속 해제되면 호출되는 메서드*/
+    @Override
+    public void handleTransportError(WebSocketSession session, Throwable exception) throws Exception {
+        super.handleTransportError(session, exception);
     }
 }
