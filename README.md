@@ -7,6 +7,10 @@
 ### webSocket 열기 HandShake
 클라이언트가 먼저 핸드셰이크 요청을 보내고 이에 응답을 서버가 클라이언트로 보내는 구조
 
+### `ws` vs `wss`
+* HTTP, HTTPS 통신을 위해 오픈한 포트를 사용하는데, websocket은 별도의 포트를 사용할 필요가 없음
+* 보안을 위해 사용하는 HTTPS처럼 웹 소켓 통신도 wss로 통신을 지원함.
+
 <br> 
 
 # stomp (Simple Text Oriented Messaging Protocol)
