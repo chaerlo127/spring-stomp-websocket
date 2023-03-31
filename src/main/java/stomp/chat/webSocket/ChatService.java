@@ -49,12 +49,12 @@ public class ChatService {
 
         return room;
     }
-
-    public <T> void sendMessage(WebSocketSession session, T message){
-        try{
-            session.sendMessage(new TextMessage(objectMapper.writeValueAsString(message)));;
-        }catch (IOException e){
-            log.error(e.getMessage(),e);
-        }
-    }
+//    [STOMP에서는 사용하지 않는 메소드]
+//    public <T> void sendMessage(WebSocketSession session, T message){
+//        try{
+//            session.sendMessage(new TextMessage(objectMapper.writeValueAsString(message)));;
+//        }catch (IOException e){
+//            log.error(e.getMessage(),e);
+//        }
+//    }
 }

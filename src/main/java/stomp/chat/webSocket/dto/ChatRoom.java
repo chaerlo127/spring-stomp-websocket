@@ -21,25 +21,28 @@ public class ChatRoom {
         this.name =  name;
     }
 
-    // message type 에 따라 session 에게 메시지 전달하기 위한 메소드
 
-    public void handleAction(WebSocketSession session, ChatMessage chat, ChatService chatService){
-        if(chat.getType().equals(ChatMessage.MessageType.ENTER)) {
-            sessions.add(session);
+//    [STOMP에서는 사용하지 않는 메소드]
+//    message type 에 따라 session 에게 메시지 전달하기 위한 메소드
+//    public void handleAction(WebSocketSession session, ChatMessage chat, ChatService chatService){
+//        if(chat.getType().equals(ChatMessage.MessageType.ENTER)) {
+//            sessions.add(session);
+//
+//            chat.setMessage(chat.getSender() + " 님이 입장하셨습니다"); // 입장한 것을 전달
+//            sendMessage(chat, chatService);
+//        }else{
+//            chat.setMessage(chat.getMessage()); // talk : 메시지를 받아서 전달
+//            sendMessage(chat, chatService);
+//        }
+//    }
 
-            chat.setMessage(chat.getSender() + " 님이 입장하셨습니다"); // 입장한 것을 전달
-            sendMessage(chat, chatService);
-        }else{
-            chat.setMessage(chat.getMessage()); // talk : 메시지를 받아서 전달
-            sendMessage(chat, chatService);
-        }
-    }
 
+//    [STOMP에서는 사용하지 않는 메소드]
     /**
      * session에 담긴 모든 session 에 handleAction으로 부터 넘어온 message를 전달할 수 있는 메소드
      * 즉, 채팅방에 있는 모든 사람들에게 변경된 내용(enter, talk)을 전달
      */
-    public <T> void sendMessage(T message, ChatService service){
-        sessions.parallelStream().forEach(sessions -> service.sendMessage(sessions,message));
-    }
+//    public <T> void sendMessage(T message, ChatService service){
+//        sessions.parallelStream().forEach(sessions -> service.sendMessage(sessions,message));
+//    }
 }
