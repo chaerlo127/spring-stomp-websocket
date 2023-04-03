@@ -23,7 +23,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         /**
          * /topic/hello 라는 토픽에 대해 구독을 신청하면 /test/topic/hello를 의미
          */
-        config.setApplicationDestinationPrefixes("/sub"); // 도착 경로
+        config.setApplicationDestinationPrefixes("/pub"); // 도착 경로
 
         /**
          * topic(pub): 한명이 message를 발행했을 때 해당 토픽을 구독하고 있는 n 명에게 뿌릴 때
@@ -31,7 +31,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
          *
          * 메시지에 채널 아이디를 포함시켜야 함.
          */
-        config.enableSimpleBroker("/pub", "/queue");
+        config.enableSimpleBroker("/sub");
     }
 
     /**

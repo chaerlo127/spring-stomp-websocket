@@ -21,6 +21,6 @@ public class ChatController {
     @MessageMapping("/open")
     public void message(ChatMessage chatMessage){
         // sub/channel/{channelId}에 구독 중인 클라이언트들에게 전송
-        operations.convertAndSend("/sub/channel/" + chatMessage.getChannelId(), chatMessage);
+        operations.convertAndSend("/channel/" + chatMessage.getChannelId(), chatMessage);
     }
 }
