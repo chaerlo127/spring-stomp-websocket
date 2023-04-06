@@ -1,5 +1,6 @@
 HELP.md
 .gradle
+application.properties
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -16,6 +17,7 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+
 
 ### IntelliJ IDEA ###
 .idea
