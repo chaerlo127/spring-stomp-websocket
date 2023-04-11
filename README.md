@@ -1,3 +1,13 @@
+# 구현 정리
+
+| issue                                                    | 기능                                              |
+|------------------------------------------------------------|-------------------------------------------------|
+| [1](https://github.com/chaerlo127/websocket-stomp/issues/1) | 😑 `Trouble Shooting`: webSocket을 열 수 없다는 에러 발생 |
+| [2](https://github.com/chaerlo127/websocket-stomp/issues/2) | `feature`: websocket 채팅방 기능 구현                  |
+| [4](https://github.com/chaerlo127/websocket-stomp/issues/4) | `😑 Trouble Shooting`: Stomp가 연결되지 않는 에러 발생     |
+| [5](https://github.com/chaerlo127/websocket-stomp/issues/5) | `feature`: stomp 채팅방 기능 구현                      |
+
+
 # webSocket
 * 기존의 단방향 HTTP 프로토콜과 호환되어 양방향 통신을 제공하기 위해 개발된 프로토콜
 * 방화벽에 제약이 없으며 통상 WebSocket으로 불림
