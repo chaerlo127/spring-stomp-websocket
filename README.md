@@ -2,7 +2,7 @@
 
 | issue                                                    | 기능                                              |
 |------------------------------------------------------------|-------------------------------------------------|
-| [1](https://github.com/chaerlo127/websocket-stomp/issues/1) | 😑 `Trouble Shooting`: webSocket을 열 수 없다는 에러 발생 |
+| [1](https://github.com/chaerlo127/websocket-stomp/issues/1) | `😑Trouble Shooting`: webSocket을 열 수 없다는 에러 발생 |
 | [2](https://github.com/chaerlo127/websocket-stomp/issues/2) | `feature`: websocket 채팅방 기능 구현                  |
 | [4](https://github.com/chaerlo127/websocket-stomp/issues/4) | `😑 Trouble Shooting`: Stomp가 연결되지 않는 에러 발생     |
 | [5](https://github.com/chaerlo127/websocket-stomp/issues/5) | `feature`: stomp 채팅방 기능 구현                      |
